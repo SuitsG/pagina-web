@@ -1,0 +1,223 @@
+/*
+Fuente
+*/
+@import url("https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+
+:root{
+    --color-negro: black;
+    --color-blanco: #FFF;
+    --color-purpura: #642a73;
+    --color-azul: #6dd5fa;
+    --fuente-caudex: "Caudex", serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    width: 100%;
+    height: 600px;
+    background: #c0c0aa;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1cf0ffbe, #c0c0aac4);  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1cf0ffbe, #c0c0aac4), url(../assets/familia.jpg); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    mask-image: linear-gradient(#1cf0ffbe 80%, transparent);
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: var(--color-blanco);
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    font-family: var(--fuente-caudex);
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color: var(--color-blanco);
+    font-family: var(--fuente-caudex);
+}
+
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*Body todo*/
+
+body{
+  border: none;
+  background: -webkit-linear-gradient( #1cf0ffbe, #c0c0aac4);
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+     
+
+
+.container__inscripcion,
+.container__playa{
+    flex: 1;
+}
+
+/*Container donde esta el boton inscripcion y los parrafos*/
+.container__inscripcion{
+    /*background: green;*/
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    /*Imagen de la playa*/
+    /*
+    width: 100%;
+    background: #c0c0aa;  
+    background: -webkit-linear-gradient(to right, #1cf0ffbe, #c0c0aac4);  
+    background: linear-gradient(to right, #1cf0ffbe, #c0c0aac4), url(../assets/playa2.jpg); 
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;*/ 
+}
+
+.container__inscripcion__parrafo{
+    font-size: 50px;
+    text-align: center;
+    color: var(--color-blanco);
+   /* background-color: var(--color-negro);*/
+    display: inline;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: var(--fuente-caudex);
+}
+
+/*Container donde va el boton y un texto de programar fecha*/
+.container__inscripcion__link{
+    display: flex;
+    gap: 10px;
+}
+
+.container__inscripcion__link__parrafo{
+    font-size: 25px;
+    text-align: center;
+    color: var(--color-negro);
+    display: inline;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: var(--fuente-caudex);
+}
+
+/*Texto de viajes por todo colombia*/
+.container__inscripcion__parrafo2{
+    font-size: 50px;
+    text-align: center;
+    color: var(--color-blanco);
+    font-weight: bold;
+    font-family: var(--fuente-caudex);
+}
+
+/*Section de la imagen izquierda*/
+.container__playa{
+
+    /*Imagen de la playa derecha*/
+    width: 100%;
+    height: 600px;
+    background: #c0c0aa;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1cf0ffbe, #c0c0aac4);  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1cf0ffbe, #c0c0aac4), url(../assets/playa.jpg); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;  
+    mask-image: linear-gradient(to top, var(--color-blanco) 80%, transparent);
+}
+
+
+
+
+/*.imagen__playa{
+    border-radius: 10px;
+    width: 100%;
+}*/
+
+
+
+/* Animación de Boton Inscribite */
+.link__sesion { 
+    text-decoration: none;
+    background: var(--color-negro);
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: var(--color-blanco);
+    font-size: 24px;
+    font-family: var(--fuente-caudex);
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+}
+
+.link__sesion::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,
+    red, blue, deeppink, blue,
+    red, blue, deeppink, blue);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
