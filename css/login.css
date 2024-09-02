@@ -72,6 +72,8 @@ header {
   font-weight: bold;
   font-family: var(--fuente-caudex);
   color: var(--color-negro);
+  /*text-shadow: 1px 1px 1px rgba(32,32,32,0.3);*/
+  text-shadow: 3px 3px 25px #d23da5;
 }
 .container__formulario__campos{
   display: flex;
@@ -99,6 +101,7 @@ header {
 
 /*Animacion boton enviar*/
 .boton__enviar {
+  margin-top: 20px;
     font-family: var(--fuente-caudex);
     font-size: 15px;
     width: 40%;
