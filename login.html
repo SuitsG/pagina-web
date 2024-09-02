@@ -13,7 +13,7 @@
     </nav>
     </header>
   <body>
-     <form class="container__formulario"  action="prueba.php">
+     <form class="container__formulario"  action="prueba.php" onsubmit="this.reset();">
         <div class="container__formulario__campos">
             <label class="container__formulario__campos__label" for="text">Nombre</label>
             <input class="container__formulario__campos__input" type="text" required>
@@ -30,7 +30,7 @@
             <label class="container__formulario__campos__label" for="number">Numero de personas que viajan</label>
             <input class="container__formulario__campos__input" type="number" required>
         </div>
-        <button type="reset" class="boton__enviar">
+        <button type="submit" class="boton__enviar">
             Enviar
         </button>
     </form>

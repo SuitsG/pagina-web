@@ -61,16 +61,17 @@ header {
 .container__formulario{
   display: flex;
   flex-direction: column;
-  
+  height: 80vh;
   justify-content: center;
   gap: 15px;
-  margin: 50px;
+  margin: 100px;
 }
 
 .container__formulario__campos__label{
   font-size: 25px;
   font-weight: bold;
   font-family: var(--fuente-caudex);
+  color: var(--color-negro);
 }
 .container__formulario__campos{
   display: flex;
