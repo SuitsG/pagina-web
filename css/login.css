@@ -103,7 +103,7 @@ header {
 .boton__enviar {
   margin-top: 20px;
     font-family: var(--fuente-caudex);
-    font-size: 15px;
+    font-size: 22px;
     width: 40%;
     border: none;
     color: var(--color-blanco);

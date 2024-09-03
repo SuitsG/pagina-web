@@ -15,19 +15,25 @@
   <body>
      <form class="container__formulario"  action="prueba.php" onsubmit="this.reset();">
         <div class="container__formulario__campos">
-            <label class="container__formulario__campos__label" for="text">Nombre</label>
-            <input class="container__formulario__campos__input" type="text" required>
+            <label class="container__formulario__campos__label" for="nombre">Nombre</label>
+            <input class="container__formulario__campos__input" type="text" pattern="[a-zA-Z\s]+" 
+            title="Solo se permiten letras y espacios" required>
         </div>
         <div class="container__formulario__campos">
-            <label class="container__formulario__campos__label" for="text">Apellido</label>
-            <input class="container__formulario__campos__input" type="text" required>
+            <label class="container__formulario__campos__label" for="apellido">Apellido</label>
+            <input class="container__formulario__campos__input" type="text" pattern="[a-zA-Z\s]+" 
+            title="Solo se permiten letras y espacios" required>
         </div>
         <div class="container__formulario__campos">
-            <label class="container__formulario__campos__label" for="number">Telefono</label>
-            <input class="container__formulario__campos__input" type="tel" required>
+            <label class="container__formulario__campos__label" for="telefono">Teléfono</label>
+            <input class="container__formulario__campos__input" type="text" id="numero" name="numero" 
+            pattern="\d{10}" 
+            minlength="10" 
+            maxlength="10" 
+            title="Debe ser un número de 10 dígitos" required>
         </div>
         <div class="container__formulario__campos">
-            <label class="container__formulario__campos__label" for="number">Numero de personas que viajan</label>
+            <label class="container__formulario__campos__label" for="number">Número de personas que viajan</label>
             <input class="container__formulario__campos__input" type="number" required>
         </div>
         <button type="submit" class="boton__enviar">
