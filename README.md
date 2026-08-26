@@ -120,4 +120,4 @@ mediante Cloudflare Tunnel.
 
 ## 📄 Licencia
 
-Este proyecto es solo con fines educativos.
+Este proyecto es solo con fines educativos y no tiene licencia de uso. No se permite su uso comercial ni distribución sin autorización expresa del autor.
