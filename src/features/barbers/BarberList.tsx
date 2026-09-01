@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { BarberCartData } from './types/barber-cart';
-import { ArrowUpRight, Star } from 'lucide-react';
+import { IconArrowUpRight, IconStar } from '@/components/ui/Icon';
 
 
 interface BarberCardProps {
@@ -59,6 +59,8 @@ export default function BarberList({ barbers }: BarberCardProps) {
                     <Image
                       src={barber.imageUrl}
                       alt={barber.imageAlt}
+                      width={500}
+                      height={500}
                       decoding="async"
                       className="h-full w-full object-cover grayscale transition duration-500 group-hover:scale-[1.025] group-hover:grayscale-0 motion-reduce:transform-none"
                     />
@@ -104,7 +106,7 @@ export default function BarberList({ barbers }: BarberCardProps) {
                         aria-hidden="true"
                         className="grid size-9 shrink-0 place-items-center border border-white/10 text-white/40 transition-colors duration-300 group-hover:border-amber-400/50 group-hover:text-amber-400"
                       >
-                        <ArrowUpRight
+                        <IconArrowUpRight
                           className="size-4"
                           strokeWidth={1.5}
                         />
@@ -130,7 +132,7 @@ export default function BarberList({ barbers }: BarberCardProps) {
                           aria-label={`Calificación: ${barber.rating} de 5`}
                           className="inline-flex items-center gap-1.5 text-xs font-medium text-amber-400"
                         >
-                          <Star
+                          <IconStar
                             aria-hidden="true"
                             className="size-3.5"
                             fill="currentColor"

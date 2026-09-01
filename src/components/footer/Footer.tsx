@@ -1,50 +1,57 @@
 import Image from "next/image";
 import Link from "next/link";
+import {
+    IconBrandWhatsapp,
+    IconBrandX,
+    IconBrandFacebook,
+    IconBrandInstagram,
+    IconBrandTiktok,
+} from "@/components/ui/Icon";
 
 const redesSociales = [
     {
         name: "Facebook",
-        href: "/",
-        icon: "/icons/brand-facebook.svg",
+        href: "https://www.facebook.com/yesidcasallasx",
+        icon: IconBrandFacebook,
     },
     {
         name: "X",
-        href: "/",
-        icon: "/icons/brand-x.svg",
+        href: "https://x.com/yesidcasallasx",
+        icon: IconBrandX,
     },
     {
         name: "WhatsApp",
-        href: "/",
-        icon: "/icons/brand-whatsapp.svg",
+        href: "https://wa.me/3229630504",
+        icon: IconBrandWhatsapp,
     },
     {
         name: "Instagram",
-        href: "/",
-        icon: "/icons/brand-instagram.svg",
+        href: "https://www.instagram.com/yesidcasallasx/",
+        icon: IconBrandInstagram,
     },
     {
         name: "TikTok",
-        href: "/",
-        icon: "/icons/brand-tiktok.svg",
+        href: "https://www.tiktok.com/@yesidcasallasx",
+        icon: IconBrandTiktok,
     },
 ];
 
 const informacionLegal = [
     {
         name: "Términos y condiciones",
-        href: "/terminos",
+        href: "/legal/terminos-condiciones",
     },
     {
         name: "Política sobre cookies",
-        href: "/cookies",
+        href: "/legal/cookies",
     },
     {
         name: "Política de privacidad y seguridad",
-        href: "/privacidad",
+        href: "/legal/privacidad",
     },
     {
         name: "Términos de uso",
-        href: "/terminos-de-uso",
+        href: "/legal/terminos-uso",
     },
 ];
 
@@ -90,19 +97,17 @@ export default function Footer() {
                         </h2>
 
                         <ul className="flex flex-col gap-4">
-                            {redesSociales.map(({ name, href, icon }) => (
+                            {redesSociales.map(({ name, href, icon: Icon }) => (
                                 <li key={name}>
                                     <Link
                                         href={href}
                                         className="group inline-flex items-center gap-3 text-sm text-white/60 transition-colors duration-300 hover:text-white"
                                     >
                                         <span className="grid size-8 place-items-center border border-white/10 transition-colors duration-300 group-hover:border-amber-400/50 group-hover:bg-white/5">
-                                            <Image
-                                                src={icon}
-                                                alt=""
-                                                width={20}
-                                                height={20}
-                                                className="size-5 brightness-0 invert opacity-60 transition-opacity duration-300 group-hover:opacity-100"
+                                            <Icon
+                                                aria-hidden="true"
+                                                className="size-5 text-white/60 transition-colors duration-300 group-hover:text-white"
+                                                stroke={1.5}
                                             />
                                         </span>
 

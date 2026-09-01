@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Bell, User } from "lucide-react";
+import { IconUser, IconBell} from "@/components/ui/Icon";
 import MobileMenu from "./MobileMenu";
 
 const links = [
@@ -63,7 +63,7 @@ export default function Header() {
                         aria-label="Notificaciones"
                         className="hidden size-9 place-items-center border border-transparent text-white/60 transition-colors duration-300 hover:border-white/15 hover:bg-white/5 hover:text-amber-400 sm:grid"
                     >
-                        <Bell
+                        <IconBell
                             aria-hidden="true"
                             className="size-4.5"
                             strokeWidth={1.5}
@@ -75,7 +75,7 @@ export default function Header() {
                         aria-label="Perfil"
                         className="grid size-9 place-items-center border border-transparent text-white/60 transition-colors duration-300 hover:border-white/15 hover:bg-white/5 hover:text-amber-400"
                     >
-                        <User
+                        <IconUser
                             aria-hidden="true"
                             className="size-4.5"
                             strokeWidth={1.5}

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { IconMenu2, IconX } from "@/components/ui/Icon";
 
 type LinkItem = {
     name: string;
@@ -27,13 +27,13 @@ export default function MobileMenu({ links }: MobileMenuProps) {
                 className="grid size-9 place-items-center border border-transparent text-white/70 transition-colors duration-300 hover:border-white/15 hover:bg-white/5 hover:text-amber-400 md:hidden"
             >
                 {open ? (
-                    <X
+                    <IconX
                         aria-hidden="true"
                         className="size-5"
                         strokeWidth={1.5}
                     />
                 ) : (
-                    <Menu
+                    <IconMenu2
                         aria-hidden="true"
                         className="size-5"
                         strokeWidth={1.5}
@@ -45,7 +45,7 @@ export default function MobileMenu({ links }: MobileMenuProps) {
                 <nav
                     id="mobile-navigation"
                     aria-label="Navegación móvil"
-                    className="absolute inset-x-0 top-full border-b border-white/10 bg-[#0a0d0d]/98 px-4 py-6 backdrop-blur-xl md:hidden"
+                    className="absolute inset-IconX-0 top-full border-b border-white/10 bg-[#0a0d0d]/98 px-4 py-6 backdrop-blur-xl md:hidden"
                 >
                     <ul className="flex flex-col">
                         {links.map(({ name, href }, index) => (
