@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Mail } from "lucide-react";
+import { IconArrowRight , IconMail } from "@/components/ui/Icon";
 import { PasswordField } from "@/components/auth/password-field";
 
 export default function LoginPage() {
@@ -97,7 +97,7 @@ export default function LoginPage() {
                                 </label>
 
                                 <div className="relative mt-3 border-b border-line transition-colors focus-within:border-brand">
-                                    <Mail
+                                    <IconMail
                                         aria-hidden="true"
                                         size={19}
                                         strokeWidth={1.8}
@@ -134,7 +134,7 @@ export default function LoginPage() {
                             >
                                 <span>INICIAR SESIÓN</span>
 
-                                <ArrowRight
+                                <IconArrowRight
                                     aria-hidden="true"
                                     size={18}
                                     strokeWidth={2}

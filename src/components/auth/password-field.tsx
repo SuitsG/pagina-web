@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Eye, EyeOff, LockKeyhole } from "lucide-react";
+import { IconEye, IconEyeOff, IconLock } from "@/components/ui/Icon";
 
 export function PasswordField() {
     const [showPassword, setShowPassword] = useState(false);
@@ -26,7 +26,7 @@ export function PasswordField() {
             </div>
 
             <div className="relative mt-3 border-b border-line transition-colors focus-within:border-brand">
-                <LockKeyhole
+                <IconLock
                     aria-hidden="true"
                     size={19}
                     strokeWidth={1.8}
@@ -55,13 +55,13 @@ export function PasswordField() {
                     className="absolute right-0 top-1/2 -translate-y-1/2 cursor-pointer p-2 text-muted transition-colors hover:text-brand focus-visible:outline-2 focus-visible:outline-brand"
                 >
                     {showPassword ? (
-                        <Eye
+                        <IconEye
                             aria-hidden="true"
                             size={19}
                             strokeWidth={1.8}
                         />
                     ) : (
-                        <EyeOff
+                        <IconEyeOff
                             aria-hidden="true"
                             size={19}
                             strokeWidth={1.8}

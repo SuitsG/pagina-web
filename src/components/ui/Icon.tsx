@@ -10,4 +10,9 @@ export {
     IconX,
     IconArrowUpRight,
     IconStar,
+    IconArrowRight,
+    IconMail,
+    IconLock,
+    IconEye,
+    IconEyeOff,
 } from '@tabler/icons-react';
