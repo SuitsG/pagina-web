@@ -15,4 +15,5 @@ export {
     IconLock,
     IconEye,
     IconEyeOff,
+    IconBrandYoutube,
 } from '@tabler/icons-react';

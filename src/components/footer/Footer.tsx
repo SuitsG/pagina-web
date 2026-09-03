@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import {
     IconBrandWhatsapp,
@@ -6,6 +5,7 @@ import {
     IconBrandFacebook,
     IconBrandInstagram,
     IconBrandTiktok,
+    IconBrandYoutube
 } from "@/components/ui/Icon";
 
 const redesSociales = [
@@ -33,6 +33,11 @@ const redesSociales = [
         name: "TikTok",
         href: "https://www.tiktok.com/@yesidcasallasx",
         icon: IconBrandTiktok,
+    },
+    {
+        name: "YouTube",
+        href: "https://www.youtube.com/@yesidcasallasx",
+        icon: IconBrandYoutube,
     },
 ];
 
