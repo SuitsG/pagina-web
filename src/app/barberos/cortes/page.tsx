@@ -1,7 +1,7 @@
 export default function CortePage(){
     return (
         <div>
-            <h1>Cortes</h1>
+            <h1>Cortes de los barberos</h1>
         </div>
     );
 }
